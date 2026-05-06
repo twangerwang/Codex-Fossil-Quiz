@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Texas Fossil Detectives</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">TEKS 4.12C Study App</p>
+        <h1>Texas Fossil Detectives</h1>
+      </div>
+      <nav class="tabs" aria-label="App sections">
+        <button class="tab is-active" data-view="study" type="button">Study</button>
+        <button class="tab" data-view="field" type="button">Field Lab</button>
+        <button class="tab" data-view="quiz" type="button">Quiz</button>
+        <button class="tab" data-view="journal" type="button">Journal</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="study" class="view is-active">
+        <div class="hero-grid">
+          <section class="hero-panel">
+            <div class="fossil-scene" aria-hidden="true">
+              <div class="rock-layer layer-sky"></div>
+              <div class="rock-layer layer-sand"></div>
+              <div class="rock-layer layer-clay"></div>
+              <div class="ammonite-shell">
+                <span></span>
+              </div>
+              <div class="shell shell-one"></div>
+              <div class="shell shell-two"></div>
+              <div class="leaf-print"></div>
+            </div>
+          </section>
+          <section class="intro">
+            <p class="eyebrow">Chapter 10: Energy Flow Within Ecosystems</p>
+            <h2>Fossils are clues from old ecosystems.</h2>
+            <p>
+              A fossil can show what lived in a place long ago. If we match the fossil to
+              the kind of environment that organism needed, we can infer what that place
+              was like in the past.
+            </p>
+            <div class="quick-stat">
+              <span id="masteredCount">0</span>
+              <p>study cards marked as mastered</p>
+            </div>
+          </section>
+        </div>
+
+        <section class="band">
+          <div class="section-heading">
+            <p class="eyebrow">Big idea</p>
+            <h2>Evidence leads to an inference.</h2>
+          </div>
+          <div class="formula">
+            <div>
+              <strong>Fossil evidence</strong>
+              <span>What was found?</span>
+            </div>
+            <div>
+              <strong>Organism needs</strong>
+              <span>Where could it live?</span>
+            </div>
+            <div>
+              <strong>Past environment</strong>
+              <span>What was this place like?</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="study-grid" id="studyCards"></section>
+      </section>
+
+      <section id="field" class="view">
+        <div class="section-heading">
+          <p class="eyebrow">Field Lab</p>
+          <h2>Match each fossil clue to a past environment.</h2>
+        </div>
+        <div class="lab-layout">
+          <section class="specimen-list" id="specimenList" aria-label="Fossil specimens"></section>
+          <section class="environment-board" id="environmentBoard" aria-label="Environment choices"></section>
+        </div>
+        <div class="lab-feedback" id="labFeedback" role="status">Choose a fossil clue, then choose the environment it points to.</div>
+      </section>
+
+      <section id="quiz" class="view">
+        <div class="quiz-shell">
+          <div class="quiz-header">
+            <div>
+              <p class="eyebrow">Quiz</p>
+              <h2 id="quizTitle">Ready for a fossil challenge?</h2>
+            </div>
+            <div class="score-pill"><span id="score">0</span>/<span id="total">0</span></div>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <span id="quizProgress"></span>
+          </div>
+          <div id="quizBody"></div>
+          <div class="quiz-actions">
+            <button class="primary" id="nextQuestion" type="button">Start Quiz</button>
+            <button class="ghost" id="resetQuiz" type="button">Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="journal" class="view">
+        <div class="journal-layout">
+          <section>
+            <p class="eyebrow">Scientist Journal</p>
+            <h2>Explain your evidence.</h2>
+            <p>
+              A strong science answer uses evidence and reasoning. Practice with the
+              sentence builder, then write your own answer.
+            </p>
+            <div class="sentence-builder">
+              <label for="fossilPick">Fossil evidence</label>
+              <select id="fossilPick"></select>
+              <label for="environmentPick">Past environment</label>
+              <select id="environmentPick"></select>
+              <button class="primary" id="buildSentence" type="button">Build Sentence</button>
+            </div>
+          </section>
+          <section class="journal-card">
+            <textarea id="journalText" rows="9" aria-label="Journal writing"></textarea>
+            <div class="journal-actions">
+              <button class="ghost" id="copySentence" type="button">Use Builder Sentence</button>
+              <button class="ghost" id="clearJournal" type="button">Clear</button>
+            </div>
+          </section>
+        </div>
+
+        <section class="sources">
+          <h2>Teacher Sources</h2>
+          <a href="https://texasgateway.org/teks/s412c/overview" target="_blank" rel="noreferrer">Texas Gateway TEKS 4.12C overview</a>
+          <a href="https://texasgateway.org/teks/s412c/alignments" target="_blank" rel="noreferrer">Texas Gateway TEKS 4.12C alignments</a>
+          <a href="https://www.tcdrs.org/library/article_ladonia-fossil-park/" target="_blank" rel="noreferrer">Ladonia Fossil Park fossil examples</a>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
