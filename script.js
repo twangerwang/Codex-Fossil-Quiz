@@ -103,49 +103,127 @@ const labItems = [
 const quizQuestions = [
   {
     question: "A student finds an ammonite fossil in Texas. What past environment does that best support?",
-    answers: ["A shallow sea", "A snowy mountain", "A dry desert only", "A city street"],
-    correct: 0,
+    answers: ["A snowy mountain", "A shallow sea", "A dry desert only", "A city street"],
+    correct: 1,
     explain: "Ammonites were ocean animals, so they are evidence that the area had sea water long ago."
   },
   {
     question: "Why can a fossil help scientists describe a past environment?",
     answers: [
-      "The organism's needs give clues about where it lived.",
       "Every fossil means the same environment.",
       "Fossils only tell us the color of rocks.",
+      "The organism's needs give clues about where it lived.",
       "Fossils are guesses with no evidence."
     ],
-    correct: 0,
+    correct: 2,
     explain: "Scientists use evidence. They compare the fossil to what that organism needed to survive."
   },
   {
     question: "Which fossil evidence would best support a warm forest in the past?",
-    answers: ["Petrified palmwood", "A shark tooth", "A mosasaur bone", "An oyster shell"],
-    correct: 0,
+    answers: ["A shark tooth", "A mosasaur bone", "An oyster shell", "Petrified palmwood"],
+    correct: 3,
     explain: "Palm trees are plants that need warmth and water, so petrified palmwood can point to a warm forest."
   },
   {
     question: "Texas rocks with many oyster and clam fossils most likely formed in what environment?",
-    answers: ["Shallow water", "Outer space", "A parking lot", "A frozen volcano"],
-    correct: 0,
+    answers: ["Outer space", "A parking lot", "Shallow water", "A frozen volcano"],
+    correct: 2,
     explain: "Oysters and clams live in water, and many shell fossils together can point to an old sea floor."
   },
   {
     question: "A fossil footprint is different from a fossil bone because it is evidence of...",
-    answers: ["An animal's activity", "A plant's roots", "A shell's color", "A cloud shape"],
-    correct: 0,
+    answers: ["A plant's roots", "A shell's color", "A cloud shape", "An animal's activity"],
+    correct: 3,
     explain: "A footprint is a trace fossil. It shows an animal walked across a surface."
   },
   {
     question: "Which answer uses evidence and reasoning the best?",
     answers: [
-      "I found a shark tooth, so this place may have been ocean water because sharks live in water.",
       "I found a shark tooth, so this place was definitely a mountain.",
       "I found a rock, so there were dinosaurs.",
+      "I found a shark tooth, so this place may have been ocean water because sharks live in water.",
       "I like fossils, so the environment was a forest."
     ],
-    correct: 0,
+    correct: 2,
     explain: "The best answer connects the fossil evidence to what the organism needed."
+  },
+  {
+    question: "A mosasaur bone is found in a Texas rock layer. Which clue matters most?",
+    answers: [
+      "Mosasaurs were large swimming reptiles.",
+      "Mosasaurs built nests in tall trees.",
+      "Mosasaurs only lived on dry land.",
+      "Mosasaurs were modern farm animals."
+    ],
+    correct: 0,
+    explain: "A mosasaur was an ocean animal, so its fossil can be evidence of an ancient ocean."
+  },
+  {
+    question: "A rock layer has fossil leaves and bits of petrified wood. What is the best inference?",
+    answers: [
+      "The area was always covered by deep ocean water.",
+      "The area had plants growing nearby long ago.",
+      "The area had no living things.",
+      "The area was outer space."
+    ],
+    correct: 1,
+    explain: "Leaves and wood are plant evidence, so they point to a land environment with plants."
+  },
+  {
+    question: "Which fossil would be the strongest evidence for an ancient sea in Texas?",
+    answers: ["Dinosaur footprint", "Leaf print", "Ammonite shell", "Mammoth tooth"],
+    correct: 2,
+    explain: "Ammonites lived in salt water, so an ammonite shell is strong evidence of a sea."
+  },
+  {
+    question: "What should a scientist do before deciding what an old environment was like?",
+    answers: [
+      "Pick the funniest answer.",
+      "Ignore the fossil location.",
+      "Use only one guess and stop.",
+      "Observe the fossils and compare them to living things and environments."
+    ],
+    correct: 3,
+    explain: "Scientists make careful observations and use comparisons to support their explanations."
+  },
+  {
+    question: "A mammoth tooth with flat ridges suggests the animal ate tough plants. What environment fits best?",
+    answers: ["Grassland", "Deep ocean", "Coral reef", "Outer space"],
+    correct: 0,
+    explain: "Mammoths ate grasses and other plants, so the fossil can point to grasslands or open woodlands."
+  },
+  {
+    question: "Which pair is matched correctly?",
+    answers: [
+      "Petrified palmwood: frozen ocean",
+      "Shark tooth: ancient water environment",
+      "Ammonite: dry desert only",
+      "Mammoth tooth: city sidewalk"
+    ],
+    correct: 1,
+    explain: "Sharks live in water, so a shark tooth can be evidence of an ancient ocean or coast."
+  },
+  {
+    question: "If a fossil is found in a rock layer, what can the layer help scientists understand?",
+    answers: [
+      "Only the fossil's favorite food",
+      "Only what the weather is today",
+      "What environment may have existed when the fossil formed",
+      "The exact name of every animal nearby"
+    ],
+    correct: 2,
+    explain: "The fossil and the rock layer together can give clues about the past environment."
+  },
+  {
+    question: "Which statement is a strong conclusion for TEKS 4.12C?",
+    answers: [
+      "Fossils are just decorations in rocks.",
+      "All Texas fossils came from the same animal.",
+      "A fossil is not useful unless it is a dinosaur.",
+      "Fossil evidence can help identify and describe past environments."
+    ],
+    correct: 3,
+    explain: "TEKS 4.12C focuses on using fossil evidence to identify and describe past environments."
   }
 ];
 
